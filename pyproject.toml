@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dprk-fightback"
+version = "0.1.0"
+description = "Public evidence on DPRK crypto theft, service exposure and fee estimates."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Aaron Elijah Mars"}]
+dependencies = []
+
+[project.scripts]
+dprk-fightback = "dprk_fightback.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["dprk_fightback*"]
+
+[tool.setuptools.package-data]
+dprk_fightback = ["data.json"]

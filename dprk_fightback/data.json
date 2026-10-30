@@ -1,0 +1,739 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-30",
+  "description": "Public evidence summaries and explicitly conditional fee scenarios. Reported means a named source reported it, not independent verification. No aggregate total or live balances.",
+  "services": [
+    {
+      "id": "vultisig",
+      "name": "Vultisig",
+      "role": "Wallet and swap interface",
+      "aliases": []
+    },
+    {
+      "id": "thorchain",
+      "name": "THORChain",
+      "role": "Cross-chain swaps",
+      "aliases": []
+    },
+    {
+      "id": "chainflip",
+      "name": "Chainflip",
+      "role": "Cross-chain swaps",
+      "aliases": []
+    },
+    {
+      "id": "uniswap",
+      "name": "Uniswap",
+      "role": "Decentralized exchange",
+      "aliases": []
+    },
+    {
+      "id": "1inch",
+      "name": "1inch",
+      "role": "Swap aggregator",
+      "aliases": []
+    },
+    {
+      "id": "sunswap",
+      "name": "SunSwap",
+      "role": "Decentralized exchange",
+      "aliases": []
+    },
+    {
+      "id": "lifi",
+      "name": "LI.FI",
+      "role": "Swap and bridge aggregator",
+      "aliases": [
+        "lifi"
+      ]
+    },
+    {
+      "id": "okx-web3",
+      "name": "OKX Web3",
+      "role": "Swap aggregator",
+      "aliases": [
+        "OKX DEX",
+        "OKX Web3 proxy"
+      ]
+    },
+    {
+      "id": "debridge",
+      "name": "deBridge",
+      "role": "Cross-chain infrastructure",
+      "aliases": []
+    },
+    {
+      "id": "symbiosis",
+      "name": "Symbiosis",
+      "role": "Swap and bridge infrastructure",
+      "aliases": []
+    },
+    {
+      "id": "exch",
+      "name": "eXch",
+      "role": "Historical custodial swap service",
+      "aliases": []
+    },
+    {
+      "id": "wasabi",
+      "name": "Wasabi",
+      "role": "Bitcoin privacy wallet",
+      "aliases": [
+        "Wasabi Wallet"
+      ]
+    },
+    {
+      "id": "joinmarket",
+      "name": "JoinMarket",
+      "role": "Peer-to-peer CoinJoin market",
+      "aliases": []
+    },
+    {
+      "id": "cryptomixer",
+      "name": "CryptoMixer",
+      "role": "Centralized Bitcoin mixer",
+      "aliases": []
+    },
+    {
+      "id": "jambler",
+      "name": "Jambler-based mixers",
+      "role": "Bitcoin mixing infrastructure",
+      "aliases": []
+    },
+    {
+      "id": "coinomize",
+      "name": "Coinomize",
+      "role": "Bitcoin mixer",
+      "aliases": []
+    },
+    {
+      "id": "mixero",
+      "name": "Mixero",
+      "role": "Mixing service",
+      "aliases": []
+    },
+    {
+      "id": "railgun",
+      "name": "RAILGUN",
+      "role": "Onchain privacy protocol",
+      "aliases": []
+    },
+    {
+      "id": "tornado-cash",
+      "name": "Tornado Cash",
+      "role": "Onchain privacy protocol",
+      "aliases": [
+        "TornadoCash"
+      ]
+    },
+    {
+      "id": "blender",
+      "name": "Blender.io",
+      "role": "Historical Bitcoin mixer",
+      "aliases": [
+        "Blender"
+      ]
+    },
+    {
+      "id": "sinbad",
+      "name": "Sinbad",
+      "role": "Historical Bitcoin mixer",
+      "aliases": []
+    },
+    {
+      "id": "yomix",
+      "name": "YoMix",
+      "role": "Bitcoin mixer",
+      "aliases": []
+    },
+    {
+      "id": "fixedfloat",
+      "name": "FixedFloat",
+      "role": "Swap service",
+      "aliases": []
+    },
+    {
+      "id": "changenow",
+      "name": "ChangeNOW",
+      "role": "Swap service",
+      "aliases": []
+    },
+    {
+      "id": "huione",
+      "name": "Huione Group",
+      "role": "Payment, exchange and marketplace group",
+      "aliases": []
+    },
+    {
+      "id": "paraswap",
+      "name": "ParaSwap / Velora",
+      "role": "Swap aggregator",
+      "aliases": [
+        "ParaSwap",
+        "Velora"
+      ]
+    },
+    {
+      "id": "binance",
+      "name": "Binance",
+      "role": "Centralized exchange",
+      "aliases": []
+    },
+    {
+      "id": "htx",
+      "name": "HTX",
+      "role": "Centralized exchange",
+      "aliases": [
+        "Huobi"
+      ]
+    },
+    {
+      "id": "mexc",
+      "name": "MEXC",
+      "role": "Centralized exchange",
+      "aliases": []
+    },
+    {
+      "id": "bybit",
+      "name": "Bybit",
+      "role": "Centralized exchange",
+      "aliases": []
+    },
+    {
+      "id": "okx",
+      "name": "OKX exchange",
+      "role": "Centralized exchange",
+      "aliases": []
+    },
+    {
+      "id": "gate",
+      "name": "Gate",
+      "role": "Centralized exchange",
+      "aliases": [
+        "Gate.io"
+      ]
+    },
+    {
+      "id": "kraken",
+      "name": "Kraken",
+      "role": "Centralized exchange",
+      "aliases": []
+    },
+    {
+      "id": "kucoin",
+      "name": "KuCoin",
+      "role": "Centralized exchange",
+      "aliases": []
+    }
+  ],
+  "claims": [
+    {
+      "id": "bybit-thorchain-flow",
+      "service": "thorchain",
+      "metric": "flow",
+      "evidence": "reported",
+      "as_of": "2025-03-04",
+      "amount": {
+        "value": "900000000",
+        "currency": "USD",
+        "qualifier": "approximate"
+      },
+      "scope": "Bybit proceeds, CEO-reported snapshot of 361,255 ETH processed through THORChain.",
+      "limitations": "Historical flow, not retained balance; not all-time DPRK throughput.",
+      "sources": [
+        {
+          "title": "Bybit CEO, March 4, 2025",
+          "url": "https://x.com/benbybit/status/1896798476945744010"
+        }
+      ]
+    },
+    {
+      "id": "bybit-exch-flow",
+      "service": "exch",
+      "metric": "flow",
+      "evidence": "reported",
+      "as_of": "2025-04-29",
+      "amount": {
+        "value": "200000000",
+        "currency": "USD",
+        "qualifier": "approximate"
+      },
+      "scope": "Bybit proceeds sent through eXch according to Elliptic.",
+      "limitations": "Reported historical flow, not cash-out, retained funds or net profit.",
+      "sources": [
+        {
+          "title": "Elliptic, eXch and Bybit investigation",
+          "url": "https://www.elliptic.co/insights/the-rise-and-fall-of-exch-the-dark-service-used-by-north-korea-to-launder-200-million-stolen-from-bybit/"
+        }
+      ]
+    },
+    {
+      "id": "bybit-okx-proxy-flow",
+      "service": "okx-web3",
+      "metric": "flow",
+      "evidence": "reported",
+      "as_of": "2025-03-04",
+      "amount": {
+        "value": "100000000",
+        "currency": "USD",
+        "qualifier": "approximate"
+      },
+      "scope": "Bybit proceeds, CEO-reported 40,233 ETH through OKX Web3 proxy.",
+      "limitations": "Not deposits into the OKX centralized exchange; not evidence of knowing assistance.",
+      "sources": [
+        {
+          "title": "Bybit CEO, March 4, 2025",
+          "url": "https://x.com/benbybit/status/1896798476945744010"
+        }
+      ]
+    },
+    {
+      "id": "bybit-chainflip-early-flow",
+      "service": "chainflip",
+      "metric": "flow",
+      "evidence": "reported",
+      "as_of": "2025-02-25",
+      "amount": {
+        "value": "1000000",
+        "currency": "USD",
+        "qualifier": "approximate"
+      },
+      "scope": "Chainflip early Bybit response snapshot, 402 ETH.",
+      "limitations": "Official wording says responded to this amount; an early reported exposure figure, not a reconciled total or retained balance.",
+      "sources": [
+        {
+          "title": "Chainflip, February 25, 2025",
+          "url": "https://x.com/Chainflip/status/1894455242718417350"
+        }
+      ]
+    },
+    {
+      "id": "bybit-btc-batch-mainly-wasabi",
+      "service": "wasabi",
+      "metric": "flow",
+      "evidence": "reported",
+      "as_of": "2025-03-20",
+      "amount": {
+        "value": "193",
+        "currency": "BTC",
+        "qualifier": "reported"
+      },
+      "scope": "Bybit reported a 193 BTC batch going mainly through Wasabi.",
+      "limitations": "The whole batch cannot be allocated exclusively to Wasabi; no USD amount or application revenue inferred.",
+      "sources": [
+        {
+          "title": "Bybit CEO, March 20, 2025",
+          "url": "https://x.com/benbybit/status/1902635986259247207"
+        }
+      ]
+    },
+    {
+      "id": "ronin-tornado-flow",
+      "service": "tornado-cash",
+      "metric": "flow",
+      "evidence": "reported",
+      "as_of": "2022-08-08",
+      "amount": {
+        "value": "455000000",
+        "currency": "USD",
+        "qualifier": "more_than"
+      },
+      "scope": "Treasury-reported Ronin/Lazarus proceeds processed through Tornado Cash.",
+      "limitations": "Historical lower bound for this incident. A 2022 sanctions announcement does not describe current legal status.",
+      "sources": [
+        {
+          "title": "Treasury, August 8, 2022 historical statement",
+          "url": "https://home.treasury.gov/news/press-releases/jy0916"
+        }
+      ]
+    },
+    {
+      "id": "harmony-tornado-flow",
+      "service": "tornado-cash",
+      "metric": "flow",
+      "evidence": "reported",
+      "as_of": "2022-08-08",
+      "amount": {
+        "value": "96000000",
+        "currency": "USD",
+        "qualifier": "more_than"
+      },
+      "scope": "Treasury-reported Harmony theft proceeds processed through Tornado Cash.",
+      "limitations": "Funds may overlap with later RAILGUN processing. Historical statement, not current sanctions status.",
+      "sources": [
+        {
+          "title": "Treasury, August 8, 2022 historical statement",
+          "url": "https://home.treasury.gov/news/press-releases/jy0916"
+        }
+      ]
+    },
+    {
+      "id": "harmony-railgun-flow",
+      "service": "railgun",
+      "metric": "flow",
+      "evidence": "reported",
+      "as_of": "2023-01-23",
+      "amount": {
+        "value": "60000000",
+        "currency": "USD",
+        "qualifier": "more_than"
+      },
+      "scope": "FBI-reported Harmony proceeds processed through RAILGUN on January 13, 2023.",
+      "limitations": "Historical FBI finding; not a current balance or proof that current controls are unchanged. May overlap with Tornado Cash flows.",
+      "sources": [
+        {
+          "title": "FBI, Harmony attribution statement",
+          "url": "https://www.fbi.gov/news/press-releases/fbi-confirms-lazarus-group-cyber-actors-responsible-for-harmonys-horizon-bridge-currency-theft"
+        }
+      ]
+    },
+    {
+      "id": "ronin-blender-flow",
+      "service": "blender",
+      "metric": "flow",
+      "evidence": "reported",
+      "as_of": "2022-05-06",
+      "amount": {
+        "value": "20500000",
+        "currency": "USD",
+        "qualifier": "more_than"
+      },
+      "scope": "Treasury-reported Ronin proceeds processed through Blender.io.",
+      "limitations": "Historical lower bound, not a current balance or legal-status assessment.",
+      "sources": [
+        {
+          "title": "Treasury, May 6, 2022 historical statement",
+          "url": "https://home.treasury.gov/news/press-releases/jy0768"
+        }
+      ]
+    },
+    {
+      "id": "lazarus-sinbad-flow",
+      "service": "sinbad",
+      "metric": "flow",
+      "evidence": "reported",
+      "as_of": "2023-05-09",
+      "amount": {
+        "value": "100000000",
+        "currency": "USD",
+        "qualifier": "approximate"
+      },
+      "scope": "Elliptic reported close to $100m from Lazarus-attributed hacks processed by Sinbad.",
+      "limitations": "A reported cumulative snapshot, not a complete lifetime total. Attribution is attributed to the researcher.",
+      "sources": [
+        {
+          "title": "Elliptic, Blender and Sinbad investigation",
+          "url": "https://www.elliptic.co/insights/has-a-sanctioned-bitcoin-mixer-been-resurrected-to-aid-north-korea-s-lazarus-group/"
+        }
+      ]
+    },
+    {
+      "id": "dprk-huione-flow",
+      "service": "huione",
+      "metric": "flow",
+      "evidence": "reported",
+      "as_of": "2025-05-01",
+      "amount": {
+        "value": "37000000",
+        "currency": "USD",
+        "qualifier": "at_least"
+      },
+      "scope": "FinCEN: DPRK cyberheist proceeds processed across Huione Group, August 2021 to January 2025.",
+      "limitations": "Group-wide amount; no allocation between individual businesses, retained balance or fee total.",
+      "sources": [
+        {
+          "title": "FinCEN, Huione finding, May 1, 2025",
+          "url": "https://www.fincen.gov/news/news-releases/fincen-finds-cambodia-based-huione-group-be-primary-money-laundering-concern"
+        }
+      ]
+    },
+    {
+      "id": "bybit-thorchain-research-cost",
+      "service": "thorchain",
+      "metric": "processing_cost",
+      "evidence": "reported",
+      "as_of": "2026-10-30",
+      "amount": {
+        "value": "3790000",
+        "currency": "USD",
+        "qualifier": "approximate"
+      },
+      "scope": "Academic estimate of transaction costs for Bybit proceeds processed via THORChain; funds traced through August 2025.",
+      "limitations": "As-of date is research access. Transaction costs are a proxy, not audited fee revenue or team profit; recipient split and price impact not separately reconciled.",
+      "sources": [
+        {
+          "title": "Griffin, Mei and Wang, Are Crypto Anti-Money Laundering Policies Effective?, p. 19",
+          "url": "https://www.zirui-wang.com/papers/aml.pdf"
+        }
+      ]
+    },
+    {
+      "id": "thorchain-post-bybit-window-fees",
+      "service": "thorchain",
+      "metric": "fee",
+      "evidence": "reported",
+      "as_of": "2025-03-05",
+      "amount": {
+        "value": "5500000",
+        "currency": "USD",
+        "qualifier": "approximate"
+      },
+      "scope": "Arkham-reported protocol fees around the post-Bybit processing window.",
+      "limitations": "The same article reports $5.5b total protocol volume. DPRK-only attribution not independently reconciled. Overlaps with the academic cost estimate; never add them together.",
+      "sources": [
+        {
+          "title": "Arkham, Bybit proceeds investigation, March 5, 2025",
+          "url": "https://info.arkm.com/research/lazarus-bridged-1-3b-of-bybit-eth-to-bitcoin"
+        }
+      ]
+    },
+    {
+      "id": "bybit-paraswap-fees",
+      "service": "paraswap",
+      "metric": "fee",
+      "evidence": "reported",
+      "as_of": "2025-03-05",
+      "amount": {
+        "value": "44.67",
+        "currency": "WETH",
+        "qualifier": "reported"
+      },
+      "scope": "Gross swap fees identified by Bybit in its authenticated governance proposal.",
+      "limitations": "Proposal requests 40.203 WETH returned after a proposed 10% bounty. Subsequent execution and retained net income not established.",
+      "sources": [
+        {
+          "title": "Bybit proposal PIP-59, Velora governance forum",
+          "url": "https://gov.velora.xyz/t/pip-59-proposal-for-returning-40-203-weth-to-bybit-after-10-bounty-deduction/2065"
+        }
+      ]
+    },
+    {
+      "id": "vultisig-all-user-context-revenue",
+      "service": "vultisig",
+      "metric": "context_revenue",
+      "evidence": "reported",
+      "as_of": "2025-03-20",
+      "amount": {
+        "value": "200000",
+        "currency": "USD",
+        "qualifier": "reported"
+      },
+      "scope": "Founder-reported cumulative swap revenue from all users; ZachXBT qualitatively linked a good chunk to Bybit activity.",
+      "limitations": "DPRK share is unknown. $200k is NOT an attributed DPRK fee total. Founder post could not be retrieved; contemporary reporting and investigator post were read.",
+      "sources": [
+        {
+          "title": "Protos, original Vultisig reporting and founder interview",
+          "url": "https://protos.com/vultisig-founder-says-dprk-linked-bybit-transactions-are-legitimate/"
+        },
+        {
+          "title": "ZachXBT, March 20, 2025",
+          "url": "https://x.com/zachxbt/status/1902652502543122906"
+        }
+      ]
+    },
+    {
+      "id": "exch-fee-scenario",
+      "service": "exch",
+      "metric": "fee",
+      "evidence": "calculated",
+      "as_of": "2026-10-30",
+      "amount": {
+        "currency": "USD",
+        "qualifier": "scenario",
+        "values": [
+          "1000000",
+          "2000000"
+        ]
+      },
+      "scope": "Illustrative fees on the reported $200m Bybit flow.",
+      "limitations": "Not observed fee receipts. Historical advertisement predates the incident; pair surcharges, discounts, refunds and valuation changes are unreconciled.",
+      "sources": [
+        {
+          "title": "Elliptic, eXch and Bybit investigation",
+          "url": "https://www.elliptic.co/insights/the-rise-and-fall-of-exch-the-dark-service-used-by-north-korea-to-launder-200-million-stolen-from-bybit/"
+        },
+        {
+          "title": "eXch historical advertisement, last edited July 31, 2022",
+          "url": "https://carigold.com/forum/threads/exch-instant-exchange-btc-xmr-ltc-eth-erc20.503761/"
+        }
+      ],
+      "calculation": {
+        "flow_claim": "bybit-exch-flow",
+        "rates": [
+          "0.005",
+          "0.01"
+        ],
+        "assumptions": "Assumes standard advertised 0.5% or 1% rates applied once to the full reported flow."
+      }
+    },
+    {
+      "id": "sinbad-fee-scenario",
+      "service": "sinbad",
+      "metric": "fee",
+      "evidence": "calculated",
+      "as_of": "2026-10-30",
+      "amount": {
+        "currency": "USD",
+        "qualifier": "scenario",
+        "values": [
+          "500000",
+          "2500000"
+        ]
+      },
+      "scope": "Illustrative fees on the reported $100m Lazarus-related flow.",
+      "limitations": "Not observed fee receipts; advertised rates may differ from actual rates, discounts and promotions.",
+      "sources": [
+        {
+          "title": "Elliptic, Blender and Sinbad investigation",
+          "url": "https://www.elliptic.co/insights/has-a-sanctioned-bitcoin-mixer-been-resurrected-to-aid-north-korea-s-lazarus-group/"
+        },
+        {
+          "title": "Trend Micro, Bridging Divides, Transcending Borders, pp. 19-21",
+          "url": "https://documents.trendmicro.com/assets/white_papers/wp-bridging-divides-transcending-borders.pdf"
+        }
+      ],
+      "calculation": {
+        "flow_claim": "lazarus-sinbad-flow",
+        "rates": [
+          "0.005",
+          "0.025"
+        ],
+        "assumptions": "Assumes advertised 0.5% to 2.5% rates applied once to the reported flow."
+      }
+    },
+    {
+      "id": "blender-fee-scenario",
+      "service": "blender",
+      "metric": "fee",
+      "evidence": "calculated",
+      "as_of": "2026-10-30",
+      "amount": {
+        "currency": "USD",
+        "qualifier": "scenario",
+        "values": [
+          "123000",
+          "389500"
+        ]
+      },
+      "scope": "Illustrative fees on a $20.5m baseline of Ronin-related flow.",
+      "limitations": "Uses a fee schedule documented in later research; exact 2022 rates unverified. Not observed revenue. Excludes fixed charges.",
+      "sources": [
+        {
+          "title": "Treasury, May 6, 2022 historical statement",
+          "url": "https://home.treasury.gov/news/press-releases/jy0768"
+        },
+        {
+          "title": "Trend Micro, Bridging Divides, Transcending Borders, pp. 19-21",
+          "url": "https://documents.trendmicro.com/assets/white_papers/wp-bridging-divides-transcending-borders.pdf"
+        }
+      ],
+      "calculation": {
+        "flow_claim": "ronin-blender-flow",
+        "rates": [
+          "0.006",
+          "0.019"
+        ],
+        "assumptions": "Applies later-described 0.6% to 1.9% rates once to a $20.5m baseline."
+      }
+    },
+    {
+      "id": "railgun-entry-fee-scenario",
+      "service": "railgun",
+      "metric": "fee",
+      "evidence": "calculated",
+      "as_of": "2026-10-30",
+      "amount": {
+        "currency": "USD",
+        "qualifier": "scenario",
+        "values": [
+          "150000"
+        ]
+      },
+      "scope": "Illustrative entry deduction on a $60m baseline of Harmony proceeds.",
+      "limitations": "No historical fee reconciliation; underlying flow is a lower bound. Excludes broadcaster charges.",
+      "sources": [
+        {
+          "title": "FBI, Harmony attribution statement",
+          "url": "https://www.fbi.gov/news/press-releases/fbi-confirms-lazarus-group-cyber-actors-responsible-for-harmonys-horizon-bridge-currency-theft"
+        },
+        {
+          "title": "RAILGUN community documentation, deductions",
+          "url": "https://docs.railgun.org/community-faqs/readme/costs-and-fees"
+        }
+      ],
+      "calculation": {
+        "flow_claim": "harmony-railgun-flow",
+        "rates": [
+          "0.0025"
+        ],
+        "assumptions": "Assumes the documented 0.25% shield rate applied to a $60m baseline."
+      }
+    },
+    {
+      "id": "railgun-round-trip-fee-scenario",
+      "service": "railgun",
+      "metric": "fee",
+      "evidence": "calculated",
+      "as_of": "2026-10-30",
+      "amount": {
+        "currency": "USD",
+        "qualifier": "scenario",
+        "values": [
+          "300000"
+        ]
+      },
+      "scope": "Approximate alternative scenario: entry plus equivalent-value exit.",
+      "limitations": "Alternative to entry-only estimate, NOT additive. Approximation ignores changes in valuation and the small effect of the entry deduction on the exit base.",
+      "sources": [
+        {
+          "title": "FBI, Harmony attribution statement",
+          "url": "https://www.fbi.gov/news/press-releases/fbi-confirms-lazarus-group-cyber-actors-responsible-for-harmonys-horizon-bridge-currency-theft"
+        },
+        {
+          "title": "RAILGUN community documentation, deductions",
+          "url": "https://docs.railgun.org/community-faqs/readme/costs-and-fees"
+        }
+      ],
+      "calculation": {
+        "flow_claim": "harmony-railgun-flow",
+        "rates": [
+          "0.005"
+        ],
+        "assumptions": "Assumes a similar-valued full exit at 0.25% in addition to the 0.25% entry deduction."
+      }
+    },
+    {
+      "id": "chainflip-base-fee-scenario",
+      "service": "chainflip",
+      "metric": "fee",
+      "evidence": "calculated",
+      "as_of": "2026-10-30",
+      "amount": {
+        "currency": "USD",
+        "qualifier": "scenario",
+        "values": [
+          "1000"
+        ]
+      },
+      "scope": "Illustrative base network fee on the early $1m Bybit snapshot.",
+      "limitations": "Early snapshot, not total earnings; excludes LP spreads, gas, broker and boost charges. Base fee funded token buy-and-burn at that time.",
+      "sources": [
+        {
+          "title": "Chainflip, February 25, 2025",
+          "url": "https://x.com/Chainflip/status/1894455242718417350"
+        },
+        {
+          "title": "Chainflip, Boost Fee Split, February 4, 2025",
+          "url": "https://chainflip.io/blog/boost-fee-split-flip-burn-increase"
+        }
+      ],
+      "calculation": {
+        "flow_claim": "bybit-chainflip-early-flow",
+        "rates": [
+          "0.001"
+        ],
+        "assumptions": "Assumes the 0.1% base network fee applied to the entire reported early exposure."
+      }
+    }
+  ]
+}
